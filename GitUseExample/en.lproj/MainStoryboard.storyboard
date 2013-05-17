@@ -25,11 +25,18 @@
                                     <action selector="ermahgerdButtonHit:" destination="2" eventType="touchUpInside" id="6CR-9B-wLZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="label from new-branch, will it merge?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4a-CP-HcX">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Xfp-bq-HWL" firstAttribute="top" secondItem="3" secondAttribute="top" constant="186" id="4uV-6W-gQk"/>
-                            <constraint firstItem="Xfp-bq-HWL" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="sIL-ra-CNI"/>
+                            <constraint firstItem="A4a-CP-HcX" firstAttribute="centerX" secondItem="Xfp-bq-HWL" secondAttribute="centerX" type="default" id="CPq-Hp-pJB"/>
+                            <constraint firstItem="A4a-CP-HcX" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="MpC-Hh-TEW"/>
+                            <constraint firstAttribute="bottom" secondItem="A4a-CP-HcX" secondAttribute="bottom" constant="207" id="pL1-rq-FA6"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,6 +44,17 @@
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="ermahgerdButtonHit:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
